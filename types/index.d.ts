@@ -8,14 +8,14 @@ declare type SearchParamProps = {
 // ========================================
 
 declare type SignUpParams = {
-  firstName: string;
-  lastName: string;
-  address1: string;
-  city: string;
-  state: string;
-  postalCode: string;
-  dateOfBirth: string;
-  ssn: string;
+  firstName?: string;
+  lastName?: string;
+  address1?: string;
+  city?: string;
+  state?: string;
+  postalCode?: string;
+  dateOfBirth?: string;
+  ssn?: string;
   email: string;
   password: string;
 };
@@ -148,7 +148,7 @@ declare interface BankInfoProps {
   type: "full" | "card";
 }
 
-declare interface HeaderBoxProps {
+declare interface ?HeaderBoxProps {
   type?: "title" | "greeting";
   title: string;
   subtext: string;
@@ -210,6 +210,7 @@ declare interface TotlaBalanceBoxProps {
 
 declare interface FooterProps {
   user: User;
+  type?: 'mobile' | 'desktop'
 }
 
 declare interface RightSidebarProps {

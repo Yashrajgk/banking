@@ -57,7 +57,7 @@ const RightSidebar = ({user, transactions, banks}:RightSidebarProps) => {
                   account={banks[1]}
                   userName={`${user.firstName} ${user.lastName}`}
                   showBalance={false}
-                />
+                />  
               </div>
             )}
           </div>
